@@ -5,22 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:share_extend/share_extend.dart';
 
-Widget getContentWidget(String category, Function() setStateCallback) {
-  switch (category) {
-    case 'Others':
-      return buildOtherOptionsWidget(setStateCallback);
-    case 'Background Image':
-      return buildBackgroundImageWidget(setStateCallback);
-    case 'Fonts':
-      return buildFontWidget(setStateCallback);
-    case 'Font Size':
-      return buildFontSizeWidget(setStateCallback);
-    default:
-      return Container();
-  }
-}
-
-Widget buildOtherOptionsWidget(Function() setStateCallback) {
+Widget buildOtherOptionsWidget(
+    Function() setStateCallback, BuildContext context) {
   return Column(
     children: [
       Container(
@@ -67,20 +53,22 @@ Widget buildOtherOptionsWidget(Function() setStateCallback) {
             ImageGallerySaver.saveFile(
               (await getFiles()).path,
               isReturnPathOfIOS: true,
+            ).then(
+              (value) => ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    'Post saved to gallery.',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             );
-            // ).then(
-            //         (value) => ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            //       content: Text(
-            //         'Saved to gallery!!',
-            //         style: GoogleFonts.roboto(
-            //           textStyle: const TextStyle(
-            //             fontWeight: FontWeight.w500,
-            //             color: Colors.white,
-            //             fontSize: 16,
-            //           ),
-            //         ),
-            //       ),
-            //     )));
           },
           style: TextButton.styleFrom(
               maximumSize: const Size(double.infinity, 48),
@@ -150,6 +138,7 @@ Widget buildBackgroundImageWidget(setStateCallback) {
     children: List.generate(postObj.length, (index) {
       String image = postObj[index].imageUrl;
       return InkWell(
+        splashColor: Colors.blueGrey.shade50,
         onTap: () {
           selectedImage = image;
           setStateCallback();

@@ -1,9 +1,10 @@
 import 'package:festival_poster_app/utils/global_data.dart';
 import 'package:festival_poster_app/utils/modal.dart';
-import 'package:festival_poster_app/views/editing_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share_extend/share_extend.dart';
+
+import 'editing_widget.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
@@ -13,6 +14,7 @@ class DetailsScreen extends StatefulWidget {
 }
 
 class _DetailsScreenState extends State<DetailsScreen> {
+  int tab = 0;
   double imageOpacity = 0.6;
   String selectedCategory = editingCategory[0];
 
@@ -123,49 +125,59 @@ class _DetailsScreenState extends State<DetailsScreen> {
               child: Column(
                 children: [
                   Expanded(
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: editingCategory
-                          .map(
-                            (e) => GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  selectedCategory = e;
-                                });
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    border: selectedCategory == e
-                                        ? Border(
-                                            bottom: BorderSide(
-                                              color:
-                                                  selectedTint!.withOpacity(1),
-                                            ),
-                                          )
-                                        : null),
-                                margin: const EdgeInsets.all(14),
-                                child: Text(
-                                  e,
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      color: selectedCategory == e
-                                          ? selectedTint!
-                                          : Colors.blueGrey.shade300,
-                                    ),
-                                  ),
-                                ),
+                      child: ListView.builder(
+                    itemCount: editingCategory.length,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            selectedCategory = editingCategory[index];
+                          });
+                          tab = index;
+                          // log(tab);
+                          print(tab);
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: selectedCategory == editingCategory[index]
+                                  ? Border(
+                                      bottom: BorderSide(
+                                        color: selectedTint!.withOpacity(1),
+                                      ),
+                                    )
+                                  : null),
+                          margin: const EdgeInsets.all(14),
+                          child: Text(
+                            editingCategory[index],
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color:
+                                    selectedCategory == editingCategory[index]
+                                        ? selectedTint!
+                                        : Colors.blueGrey.shade300,
                               ),
                             ),
-                          )
-                          .toList(),
-                    ),
-                  ),
+                          ),
+                        ),
+                      );
+                    },
+                  )),
                   Expanded(
                     flex: 6,
-                    child: getContentWidget(selectedCategory, () {
-                      setState(() {});
-                    }),
+                    child: IndexedStack(
+                      index: tab,
+                      children: [
+                        buildBackgroundImageWidget(() => setState(() {})),
+                        buildFontWidget(() => setState(() {})),
+                        buildFontSizeWidget(() => setState(() {})),
+                        buildOtherOptionsWidget(() => setState(() {}), context),
+                      ],
+                    ),
+                    // getContentWidget(selectedCategory, () {
+                    //   setState(() {});
+                    // }),
                   ),
                 ],
               ),

@@ -37,14 +37,14 @@ class _SplashScreenState extends State<SplashScreen> {
               fit: BoxFit.contain,
             ),
           ),
-          SizedBox(
-            height: 40,
-            width: 200,
-            child: Image.asset(
-              'assets/splash.gif',
-              fit: BoxFit.contain,
-            ),
-          ),
+          // SizedBox(
+          //   height: 40,
+          //   width: 200,
+          //   child: Image.asset(
+          //     'assets/splash.gif',
+          //     fit: BoxFit.contain,
+          //   ),
+          // ),
           Text(
             'FestiveFrame',
             style: GoogleFonts.satisfy(
