@@ -99,7 +99,7 @@ The Festival Post App is a dedicated mobile application designed to customize an
 
 Below is a GIF demonstrating the app's workflow and usage:
 
-![App Demo](path/to/app_demo.gif)
+<img src="screenshots/app overview.gif" height="500em" />
 
 ## How to Use
 
