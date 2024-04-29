@@ -29,25 +29,25 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <tr>
 <td style="width: 250px; border: 0;">
 
-#### ✨ splash screen
+#### ✨ Splash Screen
 <img src="screenshots/screenshot1.png" height="400em" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ home screen view 1
+#### ✨ Home Screen View 1
 <img src="screenshots/screenshot2.png" height="400em" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ home screen view 2
+#### ✨ Home Screen View 2
 <img src="screenshots/screenshot3.png" height="400em" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
+#### ✨ Post Detail Screen
 <img src="screenshots/screenshot4.png" height="400em" />
 
 </td>
@@ -55,19 +55,19 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <tr>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
+#### ✨ Post Detail Screen
 <img src="screenshots/screenshot5.png" height="400em" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
+#### ✨ Post Detail Screen
 <img src="screenshots/screenshot6.png" height="400em" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
+#### ✨ Post Detail Screen
 <img src="screenshots/screenshot7.png" height="400em" />
 
 </td>
@@ -81,7 +81,7 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <tr>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
+#### ✨ Post Detail Screen
 <img src="screenshots/screenshot9.png" height="400em" />
 
 </td>
@@ -95,7 +95,7 @@ The Festival Post App is a dedicated mobile application designed to customize an
 </tr>
 </table>
 
-## Video Demo (GIF)
+## Video Demo
 
 Below is a GIF demonstrating the app's workflow and usage:
 
