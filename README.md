@@ -122,7 +122,7 @@ Below is a GIF demonstrating the app's workflow and usage:
 To run the Festival Post App on your local machine, follow these steps:
 
 ```bash
-git clone https://github.com/yourusername/festival-post-app.git
+git clone https://github.com/jagritixjha/festival-post-app.git
 cd festival-post-app
 flutter pub get
 flutter run
