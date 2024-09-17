@@ -30,25 +30,25 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <td style="width: 250px; border: 0;">
 
 #### ✨ Splash Screen
-<img src="screenshots/screenshot1.png" height="400em" />
+<img src="screenshots/screenshot1.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
 #### ✨ Home Screen View 1
-<img src="screenshots/screenshot2.png" height="400em" />
+<img src="screenshots/screenshot2.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
 #### ✨ Home Screen View 2
-<img src="screenshots/screenshot3.png" height="400em" />
+<img src="screenshots/screenshot3.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
 #### ✨ Post Detail Screen
-<img src="screenshots/screenshot4.png" height="400em" />
+<img src="screenshots/screenshot4.png" height="auto" />
 
 </td>
 </tr>
@@ -56,25 +56,25 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <td style="width: 220px; border: 0;">
 
 #### ✨ Post Detail Screen
-<img src="screenshots/screenshot5.png" height="400em" />
+<img src="screenshots/screenshot5.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
 #### ✨ Post Detail Screen
-<img src="screenshots/screenshot6.png" height="400em" />
+<img src="screenshots/screenshot6.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
 #### ✨ Post Detail Screen
-<img src="screenshots/screenshot7.png" height="400em" />
+<img src="screenshots/screenshot7.png" height="auto" />
 
 </td>
 <td style="width: 220px; border: 0;">
 
-#### ✨ post detail screen
-<img src="screenshots/screenshot8.png" height="400em" />
+#### ✨ Post detail screen
+<img src="screenshots/screenshot8.png" height="auto" />
 
 </td>
 </tr>
@@ -82,7 +82,7 @@ The Festival Post App is a dedicated mobile application designed to customize an
 <td style="width: 220px; border: 0;">
 
 #### ✨ Post Detail Screen
-<img src="screenshots/screenshot9.png" height="400em" />
+<img src="screenshots/screenshot9.png" height="auto" />
 
 </td>
 
